@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #222;
+    background: #f7f5f0;
+    line-height: 1.7;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: 0.3s;
+}
+
+header.scrolled {
+    background: rgba(18, 20, 19, 0.96);
+    box-shadow: 0 5px 25px rgba(0,0,0,.15);
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.cross {
+    color: #c5a56a;
+    margin-right: 8px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav-links a:hover {
+    color: #c5a56a;
+}
+
+.menu-btn {
+    display: none;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 28px;
+}
+
+
+/* HERO */
+
+.hero {
+    height: 100vh;
+    min-height: 700px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(10,13,12,.9),
+            rgba(10,13,12,.45)
+        ),
+        url("img/guido-capa.jpg");
+
+   background-size: cover;
+background-position: 65% 30%;
+
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.hero-content {
+    width: 1200px;
+    max-width: 90%;
+    margin: auto;
+    color: white;
+}
+
+.hero-small,
+.section-label {
+    font-size: 12px;
+    letter-spacing: 4px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.hero-small {
+    color: #c5a56a;
+}
+
+.hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(60px, 9vw, 110px);
+    line-height: .85;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.hero h1 span {
+    color: #d0b27a;
+    font-style: italic;
+}
+
+.hero-text {
+    max-width: 520px;
+    font-size: 17px;
+    margin-bottom: 35px;
+    color: #e7e7e7;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 28px;
+    border: 1px solid #c5a56a;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+.button:hover {
+    background: #c5a56a;
+    color: #111;
+}
+
+
+/* FRASE */
+
+.quote-section {
+    text-align: center;
+    max-width: 850px;
+    margin: auto;
+    padding: 100px 25px;
+}
+
+.quote-cross {
+    color: #b89555;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+blockquote {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px;
+    line-height: 1.3;
+    font-style: italic;
+}
+
+.quote-section p {
+    margin-top: 20px;
+    color: #777;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+/* SEÇÕES */
+
+.section {
+    padding: 120px 25px;
+}
+
+.container {
+    max-width: 1150px;
+    margin: auto;
+}
+
+.two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.reverse {
+    direction: rtl;
+}
+
+.reverse > * {
+    direction: ltr;
+}
+
+.image-box img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.section-number {
+    display: block;
+    color: #c5a56a;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.section-label {
+    color: #8c7449;
+}
+
+.text-content h2,
+.centered h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 55px;
+    line-height: 1;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.text-content h2 span,
+.centered h2 span {
+    color: #aa8950;
+    font-style: italic;
+}
+
+.text-content p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+
+/* ESCURO */
+
+.dark-section {
+    background: #171a18;
+}
+
+.white {
+    color: white;
+}
+
+.light-text {
+    color: #bcbcbc !important;
+}
+
+.gold {
+    color: #c5a56a;
+}
+
+
+/* ESPIRITUALIDADE */
+
+.spiritual-section {
+    min-height: 700px;
+
+    background:
+        linear-gradient(
+            rgba(10,12,11,.65),
+            rgba(10,12,11,.8)
+        ),
+        url("img/guido-oracao.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.spiritual-content {
+    max-width: 700px;
+    padding: 30px;
+    color: white;
+}
+
+.spiritual-content h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 65px;
+    line-height: 1;
+    margin-bottom: 30px;
+}
+
+.spiritual-content h2 span {
+    color: #d0b27a;
+    font-style: italic;
+}
+
+.small-cross {
+    color: #c5a56a;
+    font-size: 25px;
+}
+
+
+/* CAUSA */
+
+.centered {
+    max-width: 800px;
+    text-align: center;
+}
+
+.large-text {
+    color: #666;
+    margin: 30px 0 50px;
+}
+
+.status-card {
+    border: 1px solid #d8cfbd;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    text-align: left;
+}
+
+.status-cross {
+    font-size: 35px;
+    color: #b89555;
+}
+
+.status-card small {
+    letter-spacing: 2px;
+    color: #8c7449;
+}
+
+.status-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+}
+
+
+/* ORAÇÃO */
+
+.prayer {
+    background: #1b1d1b;
+    color: white;
+    padding: 120px 25px;
+}
+
+.prayer-container {
+    max-width: 700px;
+    text-align: center;
+}
+
+.prayer h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 55px;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+.prayer p {
+    color: #c7c7c7;
+}
+
+.prayer .amen {
+    color: #c5a56a;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #101210;
+    text-align: center;
+    color: white;
+    padding: 60px 20px;
+}
+
+.footer-cross {
+    color: #c5a56a;
+    font-size: 30px;
+}
+
+footer h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    margin: 10px;
+}
+
+footer p,
+footer small {
+    color: #888;
+}
+
+.footer-line {
+    width: 60px;
+    height: 1px;
+    background: #c5a56a;
+    margin: 30px auto;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 800px) {
+
+    .menu-btn {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 85px;
+        left: 0;
+        width: 100%;
+        background: #171a18;
+        flex-direction: column;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .two-columns {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .reverse {
+        direction: ltr;
+    }
+
+    .image-box img {
+        height: 450px;
+    }
+
+    .text-content h2,
+    .centered h2,
+    .prayer h2 {
+        font-size: 42px;
+    }
+
+    .hero h1 {
+        font-size: 58px;
+    }
+
+    .spiritual-content h2 {
+        font-size: 48px;
+    }
+
+}
